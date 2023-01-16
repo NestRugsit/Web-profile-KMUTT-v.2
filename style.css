@@ -1,0 +1,670 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #fec232 ;
+    color: #fff;
+}
+#about{
+    background-color: rgb(102, 102, 102);
+}
+.logo{
+    margin-right: 2rem;
+    width: 80px;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bgface.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container5{
+    padding: 10px 10%;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+.navh{
+    font-size: 1px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fec232;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1 span{
+    color: #fec232;
+}
+
+/* <!-- <---------------------------------เกี่ยวกับผม---------------------------------> */
+#about{
+    padding: 80px;
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+
+
+.about-col-1 img{
+    border-radius: 15px;
+    width: 100%;
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    font-size: 20px;
+}
+.about-col-2 h1{
+    font-size: 50px;
+}
+.sub-title{
+    font-size: 100px;
+    
+    color: #fff;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f04e23;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active-link::after{
+    width: 100%;
+}
+.tab-content ul li{
+    font-size: 20px;
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+
+/* ------------------------------งานอดิเรก----------------------------- */
+#skill{
+    padding: 30px 0;
+
+}
+.container h1{
+    font-size: 50px;
+}
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.skill-list div{
+    border-radius: 2%;
+    background: #f7814a;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.skill-list div p{
+    font-size: 20px;
+}
+.skill-list div h1 a{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+   font-size: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #292929;
+    transition: background-color 0.2s, color 0.2s;
+    
+}
+.skill-list div h1 a:hover{
+    color: #292929;
+    background-color: #ffffff;
+
+}
+.skill-list div h2{
+    font-weight: 300;
+}
+.skill-list div a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+}
+.skill-list div i{
+    font-size: 80px;
+    margin-bottom: 2rem;
+    font-weight: 200px;
+}
+.skill-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.skill-list div:hover{
+    background-color: #f04e23;
+    transform: translateY(-10px);
+}
+
+
+
+/* ------------------------------ความสามารถ----------------------------- */
+#portfolio{
+    padding: 50px 0;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#f04e23);
+    border-radius: 10px;
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer i{
+    border-radius: 50%;
+    margin-top: 1rem;
+    padding: 20px;
+    color: rgb(36, 36, 36);
+    background-color: #fff;
+    font-size: 30px;
+    transition: color 0.2s,background-color 0.2s, font-size 0.2s;
+}
+.layer i:hover{
+    font-size: 40px;
+    color: #ff004f;
+    background-color: #292929;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* <!-- <---------------------------------pop up---------------------------------> */
+.popcontainer{
+    
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 19rem;
+    background-color: #f7814a;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.popcontainer p{
+    padding: 25px;
+    font-size: 30px;
+}
+.popcontainer:hover{
+    background-color: #f04e23;
+    transform: translateY(-10px);
+}
+.popcontainer h1{
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+}
+.popbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.close{
+    color: #ff3e3e;;
+    border: 0;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 3rem;
+    font-size: 15px;
+    padding: 0.2rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    bottom: 0;
+    transition: color 0.2s, background-color 0.2s;
+}
+.close:hover{
+    color: #fff;
+    background-color: #1e1e1e;
+}
+.popbox img{
+    margin: 0 10px;
+    width: 150px;
+}
+
+/* <!-- <---------------------------------pop up2---------------------------------> */
+.textcontainer{
+    transform: translate(-50%,-50%) scale(0.1);
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    height: 350px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+
+    
+}
+.textpopup{
+    z-index: 1;
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+}
+.open-popup{
+    
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.opentext{
+    visibility: visible;
+}
+.textcontainer h1{
+    margin: 1rem;
+}
+.textcontainer h4{
+    font-size: 20px;
+    margin: 0 2rem;
+}
+.close2{
+    top: -7px;
+    right: 11px;
+    position: fixed;
+    border-radius: 60px;
+    padding: 5px 12px;
+    border: 0px;
+    background-color: #ff4a4a;
+    margin-top: 20px;
+    
+}
+.close2 i{
+    
+    
+    color: #fff;
+    font-size: 30px;
+    transition: font-size 0.2s;
+}
+
+
+
+
+
+
+
+
+/* <!-- <---------------------------------ติดต่อ---------------------------------> */
+.containersp{
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.qr img{
+    width: 100px;
+    height: 100px;
+}
+#contact{
+    background-color: rgb(50, 50, 50);
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-left p {
+    margin-top: 10px;
+
+}
+.contact-left h1{
+    font-size: 40px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-icon a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.sub-title{
+    font-size: 30px;
+}
+/* <!-- <---------------------------------responsive---------------------------------> */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/bgface2.jpg);
+    }
+    .header-text{
+        margin-top: 90%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 35px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        
+        background: #f7814a;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1{
+        margin-bottom: 40px;
+        flex-basis: 100%;
+    }
+   
+    .about-col-1 img{
+        display: block;
+        width: 100%;
+        
+    }
+    .about-col-2{
+        flex-basis: 100%;
+    }
+    .sub-title{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-title{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab-link{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    
+    }
+    #about{
+        
+        padding: 10px;
+        color: #fff;
+    }
+    .sub-title{
+        font-size: 55px;
+    }
+
+    .layer h2{
+        font-size: 20px;
+    }
+    .layer p{
+        font-size: 12px;
+    }
+    .layer i{
+        font-size: 15px;
+    }
+    .textcontainer{
+        height: 400px;
+        width: 300px;
+    }
+    .textcontainer h4{
+        font-size: 19px;
+    }
+
+
+
+
+    .popcontainer{
+    
+        text-align: center;
+        border-radius: 20px;
+        margin: 0 5rem;
+        background-color: #f7814a;
+        transition: background-color 0.5s, transform 0.5s;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .contact-left p i{
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    
+    }
+    .about-col-2 p{
+        font-size: 15px;
+    }
+    .about-col-2 h1{
+        font-size: 40px;
+    }
+    .tab-content ul li{
+        font-size: 15px;
+    }
+    .tab-content ul li span{
+        
+        font-size: 20px;
+        
+    }
+    .skill-list div p{
+        font-size: 15px;
+    }
+    .container h1{
+        font-size: 40px;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 400px){
+    .textcontainer{
+        width: 300px;
+    }
+    .about-col-1{
+        height: 369px;
+    }
+    .layer h2{
+        font-size: 15px;
+    }
+    .layer p{
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #header{
+        background-image: url(images/bgface3.jpg);
+    }
+    .header-text h1{
+        font-size: 35px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        
+        background: #f7814a;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1{
+        margin-bottom: 40px;
+        flex-basis: 100%;
+    }
+   
+    .about-col-1 img{
+        display: block;
+        width: 100%;
+        
+    }
+    
+    .about-col-2{
+        
+        flex-basis: 100%;
+    }
+    .popcontainer{
+        margin: 0 5rem;
+    }
+    .layer h2{
+        font-size: 15px;
+    }
+    .layer p{
+        font-size: 10px;
+    }
+    .layer i{
+        font-size: 15px;
+    }
+}

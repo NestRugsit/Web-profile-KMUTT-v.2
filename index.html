@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee0253f72e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main> </main>
+    <div id="header">
+        <div class="container5">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="slidemenu">
+                    <li><a href="#header"><h1>หน้าหลัก</h1></a></li>
+                    <li><a href="#about"><h1>เกี่ยวกับผม</h1></a></li>
+                    <li><a href="#skill"><h1>งานอดิเรก</h1></a></li>
+                    <li><a href="#portfolio"><h1>ผลงาน</h1></a></li>
+                    <li><a href="#contact"><h1>ติดต่อ</h1></a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ผมคือใคร!!!</p>
+                <h1>สวัสดีครับ ผม <span>นายรักษิต รุ่งรัตนไชย</span></h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <---------------------------------เกี่ยวกับผม---------------------------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                        <img src="images/user4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">เกี่ยวกับผม</h1>
+                    <p>สวัสดีครับผมชื่อ นายรักษิต  รุ่งรัตนไชย ชื่อเล่นชื่อ เนสท์ เกิดวันที่ 28 พฤษภาคม 2548 อายุ 17 ปี ปัจจุบันศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 แผนการเรียน วิทย์-คณิต โรงเรียนกาญจนาภิเษกวิทยาลัย นครปฐม (พระตำหนักสวนกุหลาบมัธยม) </p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">ทำไมชอบพัฒนาเว็บ</p>
+                        <p class="tab-link" onclick="opentab('experience')">ความในใจจากผม</p>
+                        <p class="tab-link" onclick="opentab('education')">ค่ายและการอบรม</p>
+    
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li>ก่อนผมจะเริ่มเขียนโค้ด ผมถนัดการทำงานกราฟิกมาก่อนแต่เมื่อผมรู้จักการเขียนโค้ดผมก็คิดว่าจะมีวิธีไหนที่จะนำทั้ง 2 อย่างนั่นคือการ Coding และ Graphic design มาผนวกรวมกันจนกระทั่งผมได้รู้จักกับการพัฒนาเว็บไซต์ รวมถึง UX/UI designer และ Game developer ซึ่งผมรู้เลยว่านี่แหละทางที่ผมตามหา ซึ่งหลังจากที่ผมได้รู้แล้วว่าผมชอบอะไรผมก็เริ่มศึกษาการพัฒนาเว็บ อย่างจริงจังจนผมพัฒนาเว็บไซต์นี้ขึ้นมาได้แต่สิ่งที่ผมได้เรียนรู้อาจจะยังเป็นเพียงพื้นฐานซึ่งผมคิดว่าความรู้ที่ผมมีจะสามารถต่อยอดพัฒนาได้ในอนาคต</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li>สวัสดีครับ ก่อนอื่นเว็บไซต์ที่ท่านอาจารย์เห็นผมตั้งใจทำมันออกมามากๆเลยครับถึงแม้บางส่วนอาจจะยังไม่สมบูรณ์หรือขาดตกบกพร่องตรงไหน ผมขออภัยมา ณ ที่นี้ด้วยนะครับ ผมได้เรียนรู้อะไรหลายอย่างมากเลยครับกับการทำเว็บไซต์ในครั้งนี้ซึ่ง ยิ่งทำให้ผมค้นพบว่าผมชอบและรักการพัฒนาเว็บไซต์ ผมอยากเข้าศึกษาต่อที่สาขาวิชาวิทยาการคอมพิวเตอร์ประยุกต์ คณะวิทยาศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี เพื่อพัฒนาความสามารถในการพัฒนาเว็บของผมและความสามารถอื่นๆ ในด้านคอมพิวเตอร์ และในอนาคตผมอยากจะสร้างบางสิ่งบางอย่างเพื่อช่วยเหลือสังคมและสร้างประโยชน์ให้กับมหาวิทยาลัยครับ</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span> IT CAMP</span><br>จัดโดยคณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าลาดกระบัง</li>
+                            <li><span>CS CAMP</span><br>จัดโดยภาควิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าลาดกระบัง</li>
+                            <li><span>COM CAMP 33</span><br>จัดโดยภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี </li>
+                            <li><span> UX Design & UX Measuring</span><br>จัดโดยคณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าลาดกระบัง</li>
+                            <li><span>K-Engineering world tour and workshop 2022</span><br>จัดโดยคณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+                            <li><span>Basic Programming: Python,Basic Programming: C Language</span><br>จัดโดยคณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยมหิดล </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+        <!-- <---------------------------------งานอดิเรก--------------------------------->
+        <div id="skill">
+            <div class="container">
+                <h1 class="sub-title">งานอดิเรก</h1>
+                <div class="skill-list">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                        <h2>Web Design</h2>
+                        <p>
+                            หลังจากผมเริ่มศึกษาด้านคอมพิวเตอร์ผมก็ค้นพบว่าผมชอบในการพัฒนาเว็บ
+                            ผมรู้สึกว่าการพัฒนาเว็บต้องใช้หลายๆทักษะประยุกต์ร่วมกันทั้งการ Coding และ การ Design
+                            ผมศึกษาและฝึกฝนมาโดยตลอดเพื่อพัฒนาความเข้าใจและทักษะในการพัฒนาเว็บไซต์
+                            รวมถึงยังมีความรู้อีกมากมายที่รอให้ผมไปศึกษาอยู่ผมจะมุ่งมั่นฝึกฝนและเรียนรู้ต่อไป
+                             
+                        
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>หลังจากที่ผมค้นพบว่าผมชอบเขียนโปรแกรมและจะเรียนต่อในสาขานี้ ผมจึงเริ่มศึกษาและฝึกเขียนโปรแกรมในเวลาว่าง รวมถึงการหางานที่ผมชื่นชอบในสายงานด้านคอมพิวเตอร์
+                        </p>
+            
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-youtube"></i>
+                        <h2>Youtube chanel</h2>
+                        <p >การทำคลิปวิดีโอลงช่อง Youtube ก็เป็นอีกกิจกรรมที่ผมทำเป็นงานอดิเรกเช่นกันแต่ช่วงนี้ผมอาจจะไม่ได้ทำบ่อยเนื่องจากมีเรื่องเรียนและเรื่องเข้ามหาวิทยาลัยมา ทำให้เวลาว่างผมน้อยลงแต่ในอนาคตผมน่าจะมาสานต่อช่องของผมและอาจจะเพิ่ม content ใหม่ๆภายในช่องแน่นอนครับ
+                        
+                        </p>
+                        <h1 class="youtube"><a href="https://www.youtube.com/c/TisgarTV" target="_blank">Youtube</a></h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- <---------------------------------pop up--------------------------------->
+
+    <div class="popcontainer">
+        <p>ภาษาที่เคยเรียน</p>
+        <div class="popbox">
+            <img src="images/htmlll.png">
+            <img src="images/js.png">
+            <img src="images/java.png">
+            <img src="images/csss.png">
+            <img src="images/c.png">
+            <img src="images/python.png">
+        </div>
+        <button class="close" id="close1" onclick="openpop()">
+            <h2>???</h2>
+        </button>
+        
+    </div>
+
+
+
+<!-- <---------------------------------pop up2--------------------------------->
+<div class="textpopup">
+    <div class="textcontainer">
+        <h1>???</h1>
+        <button class="close2" onclick="closepop()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h4>
+            สิ่งที่ผมได้เรียนรู้มาเป็นเพียงพื้นฐานเท่านั้นครับ ผมหวังว่าจะได้โอกาสที่จะให้ผมได้เรียนรู้กับอาจารย์ภายในสาขาวิชาวิทยาการคอมพิวเตอร์ประยุกต์ คณะวิทยาศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี และผมจะนำความรู้ที่ได้ไปพัฒนาเว็บไซต์ให้ดีขึ้นอย่างแน่นอนครับ
+        </h4>
+        
+    </div>
+</div>
+    
+
+
+
+
+<!-- <---------------------------------ผลงาน--------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">ผลงาน</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project1.jpg">
+                <div class="layer">
+                    <h2>RSU Rookie Game Dev 2022 <br> จัดโดย วิทยาลัยนวัตกรรมดิจิทัลเทคโนโลยี มหาวิทยาลัยรังสิต</h2>
+                    <p>- ได้รับรางวัลรองชนะเลิศลำดับที่ 2 การแข่งขันพัฒนาเกมจากผู้เข้าแข่งขัน 25 ทีม 
+                       <br> - บริหารและนำทีมพัฒนาเกมที่มีชื่อว่า Another me ซึ่งมีสมาชิก 4 คน
+                       <br> - ทำหน้าที่ในการเขียนโค้ดในส่วนของการเดินของตัวละคร ระบบการต่อสู้ภายในเกมแบบ turn based รวมไปถึงการออกแบบแผนที่ภายในเกม กราฟิกที่ใช้ในเกมและแอนิเมชั่น
+                             <br> - วางแผนและออกแบบแนวทางการพัฒนาเกมให้กับทีมเพื่อชนะการแข่งขัน
+                             <br> - นำเสนอ Project เกมที่เสร็จสมบูรณ์ต่อหน้าคณะกรรมการ อาจารย์มหาวิทยาลัยรังสิต 
+                           และผู้เชี่ยวชาญในวงการพัฒนาเกม</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project2.jpg" >
+                <div class="layer">
+                    <h2>Gamer to Coder 2022 <br> จัดโดย Garena thailand และ กระทรวงศึกษาธิการ</h2>
+                    <p>- ได้เรียนรู้และฝึกฝนการเขียนและพัฒนาเว็บไซต์เพื่อใช้โปรโมทเกมของบริษัท Garena
+                        <br>- ได้รับฟังประสบการณ์ของผู้ที่ทำอาชีพและทำธุรกิจในสายงานด้านคอมพิวเตอร์รวมไปถึงได้
+                           รับฟังเรื่องราวการแข่งขันสู่การเป็นแชมป์โลกของแขกรับเชิญซึ่งสร้างแรงบันดาลในการ
+                           พัฒนาตัวเองเป็นอย่างมาก
+                           <br>- ร่วมกับเพื่อนอีก 2 คนในทีม Tip-Top แข่งขันพัฒนาเว็บไซต์โปรโมทเกมของ บริษัท Garena 
+                           และเป็น 1 ใน 7 ทีมที่ได้รับรางวัลชมเชยจากผู้เข้าแข่งขัน 668 ทีม 
+                    </p>
+                    
+                    <a href="https://nestrugsit.github.io/Garena-Gamer-to-coder/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project3.jpg">
+                <div class="layer">
+                    <h2>AMI HACKATHON <br> จัดโดย วิทยาลัยนวัตกรรมการผลิตขั้นสูง สถาบันเทคโนโลยีพระจอม
+                        เกล้าเจ้าคุณทหารลาดกระบัง</h2>
+                    <p>- ได้เรียนรู้และฝึกปฏิบัติจริงเกี่ยวกับการการเทรนโมเดล AI เพื่อนำไปใช้ในการพัฒนา
+                        อุตสาหกรรมการผลิตผ่านโปรแกรม CiRA CORE
+                        <br> - ร่วมกับเพื่อนในทีมแข่งขัน Hackathon สร้างโมเดล AI เพื่อใช้ในการแยกกระป๋องโค้ก 
+                        และแป๊ปซี่ในรสชาติต่างๆบนสายพานซึ่งได้รับรางวัลเหรียญเงินจากการแข่งขัน</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <---------------------------------ติดต่อ--------------------------------->
+<div id="contact">
+    <div class="containersp">
+        <div class="row2">
+            <div class="contact-left">
+                <h1 class="sub-title">ติดต่อผม</h1>
+                <p><i class="fas fa-paper-plane"></i>rugsit.nest@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0819169452</p>
+                <div class="contact-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100014848368012" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="qr">
+            
+            
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-link")
+    var tabcontents = document.getElementsByClassName("tab-content")
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        let text = document.querySelector('.textpopup')
+        let popup = document.querySelector('.textcontainer');
+        let body = document.querySelector('body');
+
+        openpop = () =>{
+            console.log("fdsdsd")
+            popup.classList.add('open-popup');
+            body.classList.add("blur")
+            text.classList.add("opentext")
+        }
+
+        closepop = () =>{
+            popup.classList.remove("open-popup")
+            body.classList.remove("blur")
+            text.classList.remove("opentext")
+        }
+</script>
+
+<script>
+    var sidemenu = document.querySelector("#slidemenu")
+    
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
